@@ -22,10 +22,10 @@ namespace UdemyCarBook.WebApi.Controllers
             var values = await _mediator.Send(new GetFeatureQuery());
             return Ok(values);
         }
-        [HttpGet("id")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetFeature(int id)
         {
-            var value = _mediator.Send(new GetFeatureByIdQuery(id));
+            var value = await _mediator.Send(new GetFeatureByIdQuery(id));
             return Ok(value);
         }
         [HttpPost]
