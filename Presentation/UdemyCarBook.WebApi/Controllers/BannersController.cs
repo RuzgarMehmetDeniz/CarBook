@@ -8,6 +8,7 @@ namespace UdemyCarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class BannersController : ControllerBase
     {
         private readonly GetBannerQueryHandler _getBannerQueryHandler;
