@@ -11,7 +11,6 @@ namespace UdemyCarBook.WebApi.Controllers
     public class SocialMediasController : ControllerBase
     {
         private readonly IMediator _mediator;
-
         public SocialMediasController(IMediator mediator)
         {
             _mediator = mediator;
