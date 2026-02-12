@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace UdemyCarBook.Application.Features.CQRS.Commands.AboutCommands
 {
+
     public class CreateAboutCommand
     {
         public string Title { get; set; }

@@ -8,6 +8,7 @@ namespace UdemyCarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class AboutsController : ControllerBase
     {
         private readonly CreateAboutCommandHandler _createAboutCommandHandler;
