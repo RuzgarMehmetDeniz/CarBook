@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using UdemyCarBook.Application.Features.CQRS.Commands.CarCommands;
 using UdemyCarBook.Application.Features.CQRS.Handlers.CarHandlers;
 using UdemyCarBook.Application.Features.CQRS.Queries.CarQueries;
@@ -60,15 +59,15 @@ namespace UdemyCarBook.WebApi.Controllers
             return Ok("Araba Bilgisi Güncellendi");
         }
         [HttpGet("GetCarWithBrand")]
-        public  IActionResult GetCarWithBrand()
+        public IActionResult GetCarWithBrand()
         {
-            var values=  _getCarWithBrandQueryHandler.Handle();
+            var values = _getCarWithBrandQueryHandler.Handle();
             return Ok(values);
         }
         [HttpGet("GetLast5CarsWithBrandQueryHandler")]
-        public  IActionResult GetLast5CarsWithBrandQueryHandler()
+        public IActionResult GetLast5CarsWithBrandQueryHandler()
         {
-            var values=  _getLast5CarsWithBrandQueryHandler.Handle();
+            var values = _getLast5CarsWithBrandQueryHandler.Handle();
             return Ok(values);
         }
     }
