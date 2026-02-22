@@ -5,6 +5,7 @@ using UdemyCarBook.Dto.CarPricingDtos;
 namespace UdemyCarBook.WebUI.Controllers
 {
     public class CarPricingController : Controller
+
     {
         private readonly IHttpClientFactory _httpClientFactory;
         public CarPricingController(IHttpClientFactory httpClientFactory)
