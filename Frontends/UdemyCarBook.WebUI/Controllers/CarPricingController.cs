@@ -11,6 +11,7 @@ namespace UdemyCarBook.WebUI.Controllers
         {
             _httpClientFactory = httpClientFactory;
         }
+
         public async Task<IActionResult> Index()
         {
             ViewBag.v1 = "Paketler";
