@@ -9,7 +9,6 @@ namespace UdemyCarBook.WebUI.Areas.Admin.Controllers
     [Route("Admin/AdminAbout")]
     public class AdminAboutController : Controller
     {
-
         private readonly IHttpClientFactory _httpClientFactory;
         public AdminAboutController(IHttpClientFactory httpClientFactory)
         {
