@@ -10,6 +10,7 @@ using UdemyCarBook.Persistance.Context;
 
 namespace UdemyCarBook.Persistance.Repositories.BlogRepositories
 {
+
     public class BlogRepository : IBlogRepository
     {
         private readonly CarBookContext _carBookContext;
