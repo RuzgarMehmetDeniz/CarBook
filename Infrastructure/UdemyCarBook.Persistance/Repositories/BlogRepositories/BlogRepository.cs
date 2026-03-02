@@ -12,6 +12,7 @@ namespace UdemyCarBook.Persistance.Repositories.BlogRepositories
 {
     public class BlogRepository : IBlogRepository
     {
+
         private readonly CarBookContext _carBookContext;
 
         public BlogRepository(CarBookContext carBookContext)
