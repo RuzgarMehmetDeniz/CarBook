@@ -37,7 +37,6 @@ using UdemyCarBook.Persistance.Repositories.TagCloudRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
 {
     opt.RequireHttpsMetadata = false;
